@@ -5,7 +5,7 @@ import "./Hi.css";
 export default function Hi() {
   return (
     <div className="hi-page">
-      <h1>About Me</h1>
+      
       <div className="polaroid-container">
         {/* Polaroid for the image */}
         <div className="polaroid">

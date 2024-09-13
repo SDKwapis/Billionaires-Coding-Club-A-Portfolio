@@ -13,7 +13,7 @@ export default function Projects() {
 
   return (
     <div className="projects-page-new">
-      <h1>My Projects</h1>
+      
       <div className="projects-container-new">
         <div className="polaroid-grid-projects-new">
           {projects.map(project => (
