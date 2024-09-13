@@ -17,15 +17,17 @@ export default function Skills() {
   ];
 
   return (
-    <div className="skills-page">
-      <div className="polaroid-grid">
-        {skills.map((skill) => (
-          <div className="polaroid2" key={skill.id}>
-            {/* <img src={skill.image} alt={skill.name} className="polaroid-image" /> */}
-            <p className="caption">{skill.name}</p>
-            <p className="description">{skill.description}</p>
-          </div>
-        ))}
+    <div className="skills-page-new">
+      <div className="skills-container-new">
+        <div className="polaroid-grid-new">
+          {skills.map((skill) => (
+            <div className="polaroid-new" key={skill.id}>
+              {/* <img src={skill.image} alt={skill.name} className="polaroid-image-new" /> */}
+              <p className="caption-new">{skill.name}</p>
+              <p className="description-new">{skill.description}</p>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );

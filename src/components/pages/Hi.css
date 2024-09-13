@@ -1,55 +1,37 @@
-/* Styling for the overall Hi page */
+/* Styling for the overall page */
 .hi-page {
-  margin: 20px;
-  padding-bottom: 20px;
+  padding: 20px;
+  text-align: center;
 }
 
-/* Container for the polaroids */
+/* Container to center and space the polaroids */
 .polaroid-container {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  margin-top: 50px;
+  justify-content: center;
+  align-items: center;
   gap: 20px;
-}
-
-.polaroid2-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
   margin-top: 50px;
-  gap: 20px;
+  flex-wrap: wrap;
 }
 
 /* Base polaroid styling */
 .polaroid {
-  width: 200px;
+  width: 250px;
   background-color: white;
   padding: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   text-align: center;
   font-family: 'Arial', sans-serif;
   border: 1px solid #ddd;
-  transition: transform 0.2s;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  /* Smooth transition for animation */
   position: relative;
 }
 
-.polaroid2 {
-  width: 400px;
-  background-color: white;
-  padding: 40px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  text-align: center;
-  font-family: 'Arial', sans-serif;
-  border: 1px solid #ddd;
-  transition: transform 0.3s, box-shadow 0.3s;
-  position: relative;
-}
-
-/* Floating polaroid effect */
+/* Polaroid hover effect: tilt and shadow */
 .polaroid:hover {
-  transform: rotate(-3deg);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  transform: rotate(-5deg) scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
 }
 
 /* Polaroid Image Styling */
@@ -68,7 +50,7 @@
   font-weight: bold;
 }
 
-/* About Me Polaroid - */
+/* About Me Polaroid */
 .about-me {
   width: 300px;
   text-align: left;
@@ -86,5 +68,15 @@
   line-height: 1.6;
   color: #555;
 }
+
+/* Responsive design  */
+@media (max-width: 768px) {
+  .polaroid-container {
+    flex-direction: column;
+    /* Stack the polaroids vertically */
+  }
+}
+
+
   
   

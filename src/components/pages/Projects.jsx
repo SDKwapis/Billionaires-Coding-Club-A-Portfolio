@@ -12,16 +12,18 @@ export default function Projects() {
   ];
 
   return (
-    <div className="projects-page">
+    <div className="projects-page-new">
       <h1>My Projects</h1>
-      <div className="polaroid-project-grid">
-        {projects.map((project) => (
-          <div className="polaroid-project" key={project.id}>
-            {/* <img src={project.image} alt={project.name} className="polaroid-project-image" /> */}
-            <p className="caption">{project.name}</p>
-            <p className="description">{project.description}</p>
-          </div>
-        ))}
+      <div className="projects-container-new">
+        <div className="polaroid-grid-projects-new">
+          {projects.map(project => (
+            <div className="polaroid-project-new" key={project.id}>
+              {/* <img src={project.image} alt={project.name} className="polaroid-image-project-new" /> */}
+              <p className="caption-project-new">{project.name}</p>
+              <p className="description-project-new">{project.description}</p>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );
