@@ -1,0 +1,90 @@
+/* Styling for the overall Hi page */
+.hi-page {
+  margin: 20px;
+  padding-bottom: 20px;
+}
+
+/* Container for the polaroids */
+.polaroid-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 50px;
+  gap: 20px;
+}
+
+.polaroid2-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 50px;
+  gap: 20px;
+}
+
+/* Base polaroid styling */
+.polaroid {
+  width: 200px;
+  background-color: white;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  border: 1px solid #ddd;
+  transition: transform 0.2s;
+  position: relative;
+}
+
+.polaroid2 {
+  width: 400px;
+  background-color: white;
+  padding: 40px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  border: 1px solid #ddd;
+  transition: transform 0.3s, box-shadow 0.3s;
+  position: relative;
+}
+
+/* Floating polaroid effect */
+.polaroid:hover {
+  transform: rotate(-3deg);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Polaroid Image Styling */
+.polaroid-image {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 10px;
+}
+
+/* Caption for the image */
+.caption {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #333;
+  font-weight: bold;
+}
+
+/* About Me Polaroid - */
+.about-me {
+  width: 300px;
+  text-align: left;
+}
+
+/* Content inside About Me */
+.about-me-content h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.about-me-content p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #555;
+}
+  
+  

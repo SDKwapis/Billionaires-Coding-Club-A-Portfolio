@@ -1,0 +1,107 @@
+/* General reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #F7F7F7;
+  color: #333333;
+}
+
+/* Main wrapper div contains header, content, footer */
+.page-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* take up available space */
+.content-wrapper {
+  flex: 1;
+  /* Take remaining space */
+}
+
+.header {
+  display: flex;
+  background: black;
+  padding: 20px;
+  color: white;
+  justify-content: center;
+}
+
+.footer {
+  display: flex;
+  background: black;
+  color: white;
+  justify-content: center;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  background: black;
+  padding: 10px 0;
+  /* margin-bottom: 20px; */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s ease;
+}
+
+.nav-item {
+  list-style: none;
+  margin: 0 15px;
+}
+
+/* Links */
+.nav-link {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: #FFFFFF;
+  padding: 10px 15px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  border-radius: 5px;
+  position: relative;
+}
+
+/* Bright hover effect for links */
+.nav-link:hover {
+  background-color: #FF007F;
+  color: #FFFFFF;
+  box-shadow: 0px 4px 15px rgba(255, 0, 127, 0.5);
+}
+
+/* Active link styling */
+.nav-link.active {
+  background-color: #00E6B8;
+  color: #FFFFFF;
+  font-weight: bold;
+  box-shadow: 0px 4px 15px rgba(0, 230, 184, 0.5);
+}
+
+
+.nav-link.active:hover {
+  background-color: #00FFEA;
+  box-shadow: 0px 4px 20px rgba(0, 255, 234, 0.6);
+}
+
+
+@media (max-width: 768px) {
+  .nav {
+    flex-direction: column;
+    padding: 15px 0;
+  }
+
+  .nav-item {
+    margin: 10px 0;
+  }
+
+  .nav-link {
+    padding: 12px 20px;
+  }
+}
+  
+    
+      
+  

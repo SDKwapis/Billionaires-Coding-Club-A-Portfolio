@@ -1,0 +1,68 @@
+/* Container for the contact page */
+.contact-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Success and error messages */
+.success-message {
+  color: green;
+}
+
+.error-message {
+  color: red;
+}
+
+/* Form styling */
+.contact-form {
+  margin-top: 20px;
+}
+
+.big-bold-header {
+  font-size: 30px;
+  font-weight: 100;
+  color: #333;
+  text-align: start;
+  margin: 20px 0;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+/* Label styling */
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+/* Input and Textarea styling */
+.form-input,
+.form-textarea {
+  width: 100%;
+  padding: 8px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* Button styling */
+.submit-button {
+  padding: 10px 20px;
+  background-color: black;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #FF007F;
+  color: #FFFFFF;
+  box-shadow: 0px 4px 15px rgba(255, 0, 127, 0.5);
+}

@@ -1,20 +1,116 @@
+import React, { useState } from "react";
+import emailjs from "emailjs-com";
+import "./Contact.css";
+
 export default function Contact() {
+  // State to handle form inputs
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+
+  const [isSubmitted, setIsSubmitted] = useState(false);
+  const [error, setError] = useState(null);
+
+  // Handle form input changes
+  const handleChange = (event) => {
+    const { name, value } = event.target;
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
+  };
+
+  // Handle form submission using EmailJS
+  const handleSubmit = (event) => {
+    event.preventDefault();
+
+    emailjs
+      .send(
+        "service_i9hg6wf",
+        "template_i7np458",
+        {
+          from_name: formData.name,
+          from_email: formData.email,
+          message: formData.message,
+        },
+        "oklUgDNwMzPigDiDc"
+      )
+      .then((response) => {
+        console.log("SUCCESS!", response.status, response.text);
+        setIsSubmitted(true); // Display success message
+      })
+      .catch((err) => {
+        console.error("FAILED...", err);
+        setError("There was an error sending your message. Please try again.");
+      });
+
+    // Reset the form
+    setFormData({
+      name: "",
+      email: "",
+      message: "",
+    });
+  };
+
   return (
     <div>
-      <h1>Contact Page</h1>
-      <p>
-        Integer cursus bibendum sem non pretium. Vestibulum in aliquet sem, quis
-        molestie urna. Aliquam semper ultrices varius. Aliquam faucibus sit amet
-        magna a ultrices. Aenean pellentesque placerat lacus imperdiet
-        efficitur. In felis nisl, luctus non ante euismod, tincidunt bibendum
-        mi. In a molestie nisl, eu sodales diam. Nam tincidunt lacus quis magna
-        posuere, eget tristique dui dapibus. Maecenas fermentum elementum
-        faucibus. Quisque nec metus vestibulum, egestas massa eu, sollicitudin
-        ipsum. Nulla facilisi. Sed ut erat ligula. Nam tincidunt nunc in nibh
-        dictum ullamcorper. Class aptent taciti sociosqu ad litora torquent per
-        conubia nostra, per inceptos himenaeos. Etiam ornare rutrum felis at
-        rhoncus. Etiam vel condimentum magna, quis tempor nulla.
+      <p className="big-bold-header">
+        If you'd like to get in touch to talk about a collaboration or your
+        favorite Dragon Ball Z arc, I'd love to hear from you!
       </p>
+
+      {/* Show a success or error message after form submission */}
+      {isSubmitted && (
+        <p className="success-message">Your message was sent successfully!</p>
+      )}
+      {error && <p className="error-message">{error}</p>}
+
+      <form onSubmit={handleSubmit} className="contact-form">
+        <div className="form-group">
+          <label htmlFor="name">Name:</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            value={formData.name}
+            onChange={handleChange}
+            required
+            className="form-input"
+          />
+        </div>
+
+        <div className="form-group">
+          <label htmlFor="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            value={formData.email}
+            onChange={handleChange}
+            required
+            className="form-input"
+          />
+        </div>
+
+        <div className="form-group">
+          <label htmlFor="message">Message:</label>
+          <textarea
+            id="message"
+            name="message"
+            value={formData.message}
+            onChange={handleChange}
+            required
+            rows="5"
+            className="form-textarea"
+          />
+        </div>
+
+        <button type="submit" className="submit-button">
+          Send Message
+        </button>
+      </form>
     </div>
   );
 }
