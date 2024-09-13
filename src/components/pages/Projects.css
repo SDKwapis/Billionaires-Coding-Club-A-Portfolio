@@ -40,8 +40,8 @@
 
 /* Hover effect: tilt and shadow */
 .polaroid-project-new:hover {
-  transform: rotate(-5deg) scale(1.05);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+  transform: scale(1.1); /* Zoom in slightly on hover */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4); 
 }
 
 /* Polaroid Image Styling */
