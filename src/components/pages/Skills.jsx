@@ -12,6 +12,10 @@ export default function Skills() {
     { id: 6, name: "Express.js", description: "Skill description" },
     { id: 7, name: "MongoDB", description: "Skill description" },
     { id: 8, name: "Git", description: "Skill description" },
+    { id: 9, name: "Illustrator", description: "Skill description" },
+    { id: 10, name: "Photoshop", description: "Skill description" },
+    { id: 11, name: "InDesign", description: "Skill description" },
+    { id: 12, name: "Premiere", description: "Skill description" },
 
     // { id: 8, name: 'Git', description: 'Skill description', image: PlaceholderImage },
   ];
