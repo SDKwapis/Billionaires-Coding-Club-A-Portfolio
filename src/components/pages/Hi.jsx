@@ -14,7 +14,7 @@ export default function Hi() {
         </div>
 
         {/* Polaroid for the About Me */}
-        <div className="polaroid about-me">
+        <div className="polaroid2 about-me">
           <div className="about-me-content">
             <h2>About Me</h2>
             <p>
