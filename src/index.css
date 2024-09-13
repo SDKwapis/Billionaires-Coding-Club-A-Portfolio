@@ -32,7 +32,12 @@ body {
   justify-content: center;
 }
 
+.headerName {
+  font-weight: 600;
+}
+
 .footer {
+  font-size: small;
   display: flex;
   background: black;
   color: white;
