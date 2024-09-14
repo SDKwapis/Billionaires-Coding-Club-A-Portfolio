@@ -1,15 +1,14 @@
-/* Container for the contact page */
 .contact-container {
   max-width: 600px;
   margin: 0 auto;
   padding: 20px;
   background-color: #fff;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
-  border-radius: 8px; 
-  border: 1px solid #ddd; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  border: 1px solid #ddd;
 }
 
-/* Success and error messages */
+
 .success-message {
   color: green;
 }
@@ -18,7 +17,7 @@
   color: red;
 }
 
-/* Form styling */
+
 .contact-form {
   margin-top: 20px;
 }
@@ -31,19 +30,19 @@
   margin: 20px 0;
 }
 
-/* Form group spacing */
+
 .form-group {
   margin-bottom: 15px;
 }
 
-/* Label styling */
+
 label {
   display: block;
   margin-bottom: 5px;
   font-weight: bold;
 }
 
-/* Input and Textarea styling */
+
 .form-input,
 .form-textarea {
   width: 100%;
@@ -54,7 +53,7 @@ label {
   box-sizing: border-box;
 }
 
-/* Button styling */
+
 .submit-button {
   padding: 10px 20px;
   background-color: black;
@@ -76,6 +75,6 @@ label {
 @media (max-width: 768px) {
   .contact-container {
     padding: 15px;
-    max-width: 90%; 
+    max-width: 90%;
   }
 }
