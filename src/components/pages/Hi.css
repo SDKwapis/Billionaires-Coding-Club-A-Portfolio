@@ -36,10 +36,9 @@
 
 /* Polaroid Image Styling */
 .polaroid-image {
-  width: 100%;
+  width: 100px;
   height: auto;
   border-bottom: 1px solid #ddd;
-  margin-bottom: 10px;
 }
 
 
@@ -71,14 +70,21 @@
   margin-bottom: 10px;
 }
 
-
+.about {
+  font-weight: bolder;
+}
 
 /* Caption for the image */
 .caption {
   margin-top: 10px;
-  font-size: 16px;
+  font-size: 20px;
   color: #333;
   font-weight: bold;
+}
+
+.caption2 {
+  font-size: 15px;
+  color: #333;
 }
 
 /* About Me Polaroid */
@@ -90,6 +96,13 @@
 /* Content inside About Me */
 .about-me-content h2 {
   font-size: 20px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+/* Content inside About Me */
+.about-me-content-minor h4 {
+  font-size: 10px;
   margin-bottom: 10px;
   color: #333;
 }
