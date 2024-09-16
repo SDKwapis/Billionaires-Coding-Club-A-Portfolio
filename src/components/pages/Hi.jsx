@@ -1,6 +1,8 @@
 import React from "react";
 import "./Hi.css";
 import profileImage from "../../../assets/profile8bit.png";
+import  gitHub from "../../../assets/github.png";
+import linkedIn from "../../../assets/Lin.jpg";
 
 export default function Hi() {
   return (
@@ -16,10 +18,10 @@ export default function Hi() {
           <p className="caption2">(a digital representation)</p>
           <div className="links">
         <a href="https://github.com/sdkwapis" target="_blank" rel="noopener noreferrer">
-          <img src="../../../assets/github.png" alt="GitHub"/>
+          <img src={gitHub} alt="GitHub"/>
         </a>
         <a href="https://www.linkedin.com/in/stephankwapis/" target="_blank" rel="noopener noreferrer">
-          <img src="../../../assets/Lin.jpg" alt="LinkedIn"/>
+          <img src={linkedIn} alt="LinkedIn"/>
         </a>
    </div>
     </div>
