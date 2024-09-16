@@ -16,10 +16,10 @@ export default function Hi() {
           <p className="caption2">(a digital representation)</p>
           <div className="links">
         <a href="https://github.com/sdkwapis" target="_blank" rel="noopener noreferrer">
-          <img src="./assets/github.png" alt="GitHub"/>
+          <img src="../../../assets/github.png" alt="GitHub"/>
         </a>
         <a href="https://www.linkedin.com/in/stephankwapis/" target="_blank" rel="noopener noreferrer">
-          <img src="assets/Lin.jpg" alt="LinkedIn"/>
+          <img src="../../../assets/Lin.jpg" alt="LinkedIn"/>
         </a>
    </div>
     </div>
