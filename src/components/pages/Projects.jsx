@@ -14,6 +14,10 @@ import raveImage1 from "../../../assets/rave1.jpg";
 import raveImage2 from "../../../assets/rave2.jpg";
 import raveImage3 from "../../../assets/rave3.jpg";
 import raveImage4 from "../../../assets/rave4.jpg";
+import norImage from "../../../assets/noreastr2024logosingle.jpg";
+import norImage1 from "../../../assets/noreastr2024logo.jpg";
+import norImage2 from "../../../assets/noreastrPoster.jpg";
+import norImage3 from "../../../assets/noreastrTee.jpg";
 
 import Modal from "./Modal";
 
@@ -52,6 +56,13 @@ export default function Projects() {
       description: "Graphic design for Rave Dance.",
       image: raveImage,
       gallery: [raveImage1, raveImage2, raveImage3, raveImage4],
+    },
+    {
+      id: 5,
+      name: "Nor-East'r Festival",
+      description: "Graphic design for music festival.",
+      image: norImage,
+      gallery: [norImage1, norImage2, norImage3],
     },
   ];
 

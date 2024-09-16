@@ -46,17 +46,18 @@
 
 
 .nav-button {
-    background-color: #333;
+    background-color: aqua;
     color: white;
     border: none;
     padding: 10px;
     font-size: 1.2rem;
     cursor: pointer;
     margin: 10px;
+    border-radius: 30%;
 }
 
 .nav-button:hover {
-    background-color: #555;
+    background-color: #ffdd00;
 }
 
 

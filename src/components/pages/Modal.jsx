@@ -15,7 +15,7 @@ export default function Modal({
     <div className="modal-overlay" onClick={closeModal}>
       <div className="modal-content" onClick={(e) => e.stopPropagation()}>
         <button className="close-button" onClick={closeModal}>
-          X
+          close x
         </button>
         <img
           src={images[currentImageIndex]}
