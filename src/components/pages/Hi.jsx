@@ -14,7 +14,15 @@ export default function Hi() {
           />
           <p className="caption">Stephan Kwapis</p>
           <p className="caption2">(a digital representation)</p>
-        </div>
+          <div className="links">
+        <a href="https://github.com/sdkwapis" target="_blank" rel="noopener noreferrer">
+          <img src="./assets/github.png" alt="GitHub"/>
+        </a>
+        <a href="https://www.linkedin.com/in/stephankwapis/" target="_blank" rel="noopener noreferrer">
+          <img src="assets/Lin.jpg" alt="LinkedIn"/>
+        </a>
+   </div>
+    </div>
 
         {/* Polaroid for the About Me */}
         <div className="polaroid2 about-me">
@@ -23,7 +31,12 @@ export default function Hi() {
             <p>
               Hi, I’m Stephan (pronounced Steh-fahn). If you’ve ever looked at a
               website and thought, “This needs to be prettier and smarter,” then
-              you and I are on the same page.
+              you and I are on the same page. With 15 years of professional
+              graphic design experience under my belt and a passion for building
+              things that live on the web, I’m here to make the internet a more
+              stylish, functional place—one pixel at a time. Whether it's
+              crafting visuals that pop or developing sleek web apps, I’ve got
+              you covered. Just don’t ask me to fix your printer.
             </p>
           </div>
         </div>
