@@ -18,6 +18,8 @@ import norImage from "../../../assets/noreastr2024logosingle.jpg";
 import norImage1 from "../../../assets/noreastr2024logo.jpg";
 import norImage2 from "../../../assets/noreastrPoster.jpg";
 import norImage3 from "../../../assets/noreastrTee.jpg";
+import squatchdaisy from "../../../assets/squatchdaisy.jpg";
+import gumseat from "../../../assets/gumseat.jpg";
 
 import Modal from "./Modal";
 
@@ -64,6 +66,20 @@ export default function Projects() {
       image: norImage,
       gallery: [norImage1, norImage2, norImage3],
     },
+    {
+      id: 6,
+      name: "Squatch Daisy",
+      description: "A webcomic.",
+      image: squatchdaisy,
+      link: "https://www.instagram.com/squatchdaisy/",
+    },
+    {
+      id: 7,
+      name: "Gumseat Productions",
+      description: "Screen printing & embroidery.",
+      image: gumseat,
+      link: "https://www.instagram.com/gumseatproductions/",
+    },
   ];
 
   // Handle opening the modal
@@ -108,6 +124,7 @@ export default function Projects() {
                 />
                 <p className="caption-project-new">{project.name}</p>
                 <p className="description-project-new">{project.description}</p>
+               
               </div>
             ) : (
               <a
