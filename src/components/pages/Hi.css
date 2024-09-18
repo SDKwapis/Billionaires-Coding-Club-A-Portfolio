@@ -77,14 +77,23 @@
 /* Caption for the image */
 .caption {
   margin-top: 10px;
+  margin-bottom: 5px;
   font-size: 20px;
   color: #333;
   font-weight: bold;
 }
 
 .caption2 {
-  font-size: 15px;
+  font-size: 13px;
   color: #333;
+  margin: 0;
+}
+
+.caption3 {
+  font-size: 13px;
+  font-weight: bolder;
+  color: #333;
+  margin: 0;
 }
 
 /* About Me Polaroid */

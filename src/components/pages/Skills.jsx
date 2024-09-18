@@ -15,7 +15,7 @@ import premiereImage from "../../../assets/premiere.png";
 
 export default function Skills() {
   const skills = [
-    {
+    { 
       id: 1,
       name: "HTML",
       description: "5 Years Experience",

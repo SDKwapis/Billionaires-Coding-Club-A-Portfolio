@@ -16,6 +16,7 @@ export default function Hi() {
           />
           <p className="caption">Stephan Kwapis</p>
           <p className="caption2">(a digital representation)</p>
+          <p className="caption3">graphic designer / web developer</p>
           <div className="links">
         <a href="https://github.com/sdkwapis" target="_blank" rel="noopener noreferrer">
           <img src={gitHub} alt="GitHub"/>
