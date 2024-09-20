@@ -20,6 +20,13 @@ import norImage2 from "../../../assets/noreastrPoster.jpg";
 import norImage3 from "../../../assets/noreastrTee.jpg";
 import squatchdaisy from "../../../assets/squatchdaisy.jpg";
 import gumseat from "../../../assets/gumseat.jpg";
+import misc from "../../../assets/misc.png";
+import misc1 from "../../../assets/misc1.jpg";
+import misc2 from "../../../assets/misc2.jpg";
+import misc3 from "../../../assets/misc3.jpg";
+import misc4 from "../../../assets/misc4.jpg";
+import misc5 from "../../../assets/misc5.jpg";
+import basic from "../../../assets/basic.jpg";
 
 import Modal from "./Modal";
 
@@ -33,10 +40,10 @@ export default function Projects() {
   const projects = [
     {
       id: 1,
-      name: "Book Buddies",
-      description: "A book club application.",
-      image: bookbuddiesImage,
-      link: "https://group-8-project.onrender.com/",
+      name: "Basic Business",
+      description: "Business site template.",
+      image: basic,
+      link: "https://basicbusiness.netlify.app/",
     },
     {
       id: 2,
@@ -79,6 +86,13 @@ export default function Projects() {
       description: "Screen printing & embroidery.",
       image: gumseat,
       link: "https://www.instagram.com/gumseatproductions/",
+    },
+    {
+      id: 8,
+      name: "Misc",
+      description: "Miscellaneous designs.",
+      image: misc,
+      gallery: [misc2, misc1, misc3, misc4, misc5],
     },
   ];
 
