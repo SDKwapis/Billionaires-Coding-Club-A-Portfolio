@@ -20,19 +20,34 @@ export default function Hero() {
           {meta.location} &nbsp;·&nbsp; {meta.title}
         </p>
         <h1 className={styles.name} data-fade>
-          Stephan<br /><span className={styles.accent}>Kwapis</span>
+          Stephan
+          <br />
+          <span className={styles.accent}>Kwapis</span>
         </h1>
         <p className={styles.desc} data-fade>
-          <strong>15+ years</strong> building at the intersection of code, design, and
-          marketing. From full-stack web apps to credit union campaigns — I make things that
-          work <em>and</em> look the part.
+          <strong>15+ years</strong> as a versatile marketing and digital
+          operations professional who combines creative strategy, technical
+          execution, and data-driven decision making to build campaigns,
+          systems, and experiences that drive measuravble growth and engagement.
+          With a mix of web development, branding, analytics, content creation,
+          and client relationship expertise, I consistently bring high energy,
+          adaptability, and entrepreneurial problem solving to every team and
+          project I'm involved in.
         </p>
         <div className={styles.ctaRow} data-fade>
-          <a href="#projects" className={styles.btnPrimary}>View Projects</a>
-          <a href="#contact"  className={styles.btnGhost}>Get in Touch</a>
+          <a href="#projects" className={styles.btnPrimary}>
+            View Projects
+          </a>
+          <a href="#contact" className={styles.btnGhost}>
+            Get in Touch
+          </a>
         </div>
         <div className={styles.tags} data-fade>
-          {heroTags.map(t => <span key={t} className={styles.tag}>{t}</span>)}
+          {heroTags.map((t) => (
+            <span key={t} className={styles.tag}>
+              {t}
+            </span>
+          ))}
         </div>
       </div>
 
@@ -46,5 +61,5 @@ export default function Hero() {
         </div>
       </div>
     </section>
-  )
+  );
 }
