@@ -26,13 +26,7 @@ export default function Hero() {
         </h1>
         <p className={styles.desc} data-fade>
           <strong>15+ years</strong> as a versatile marketing and digital
-          operations professional who combines creative strategy, technical
-          execution, and data-driven decision making to build campaigns,
-          systems, and experiences that drive measuravble growth and engagement.
-          With a mix of web development, branding, analytics, content creation,
-          and client relationship expertise, I consistently bring high energy,
-          adaptability, and entrepreneurial problem solving to every team and
-          project I'm involved in.
+          operations professional.
         </p>
         <div className={styles.ctaRow} data-fade>
           <a href="#projects" className={styles.btnPrimary}>
