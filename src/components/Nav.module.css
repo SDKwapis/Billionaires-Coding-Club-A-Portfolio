@@ -1,0 +1,79 @@
+.nav {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 48px;
+  background: var(--paper);
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+.scrolled {
+  border-color: var(--border);
+  box-shadow: 0 1px 0 var(--border);
+}
+.logo {
+  font-family: var(--font-display);
+  font-size: 22px;
+  letter-spacing: 0.08em;
+  color: var(--ink);
+  transition: color 0.2s;
+}
+.logo:hover { color: var(--accent); }
+
+.links { display: flex; gap: 36px; list-style: none; }
+
+.link {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted);
+  transition: color 0.2s;
+}
+.link:hover { color: var(--accent); }
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+}
+.bar {
+  display: block;
+  width: 22px; height: 1px;
+  background: var(--ink);
+  transition: transform 0.25s, opacity 0.25s;
+}
+.barX1 { display: block; width: 22px; height: 1px; background: var(--ink); transform: translateY(6px) rotate(45deg); transition: transform 0.25s; }
+.barX2 { display: block; width: 22px; height: 1px; background: var(--ink); opacity: 0; transition: opacity 0.25s; }
+.barX3 { display: block; width: 22px; height: 1px; background: var(--ink); transform: translateY(-6px) rotate(-45deg); transition: transform 0.25s; }
+
+@media (max-width: 768px) {
+  .nav { padding: 16px 24px; }
+  .hamburger { display: flex; }
+  .links {
+    position: fixed;
+    top: 56px; left: 0; right: 0;
+    flex-direction: column;
+    gap: 0;
+    background: var(--paper);
+    border-bottom: 1px solid var(--border);
+    padding: 16px 24px 24px;
+    transform: translateY(-110%);
+    transition: transform 0.3s ease;
+    z-index: 99;
+  }
+  .links.open { transform: translateY(0); }
+  .link {
+    display: block;
+    padding: 12px 0;
+    border-bottom: 1px solid var(--border);
+    font-size: 13px;
+  }
+}

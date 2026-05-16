@@ -1,0 +1,10 @@
+.footer {
+  background: var(--ink); color: var(--dark-muted);
+  padding: 28px 48px;
+  display: flex; align-items: center; justify-content: space-between;
+}
+.footer span { font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.1em; }
+.tagline { color: #333; }
+@media (max-width: 768px) {
+  .footer { flex-direction: column; gap: 8px; text-align: center; padding: 24px; }
+}
