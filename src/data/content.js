@@ -6,7 +6,7 @@ export const meta = {
   name: 'Stephan Kwapis',
   title: 'Digital Strategist & Developer',
   location: 'Okemos, MI',
-  email: 'stephan@stephankwapis.com',
+  email: 'sdkwapis@gmail.com',
   linkedin: 'https://www.linkedin.com/in/stephankwapis/',
   github: 'https://github.com/sdkwapis',
   resume: '/resume.pdf',
