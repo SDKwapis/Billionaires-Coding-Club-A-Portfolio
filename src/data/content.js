@@ -4,7 +4,7 @@
 
 export const meta = {
   name: 'Stephan Kwapis',
-  title: 'Digital Strategist & Developer',
+  title: 'Digital Marketing | SEO Optimization | Web Development',
   location: 'Okemos, MI',
   email: 'sdkwapis@gmail.com',
   linkedin: 'https://www.linkedin.com/in/stephankwapis/',
